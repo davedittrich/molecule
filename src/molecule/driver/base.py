@@ -70,8 +70,8 @@ class Driver(object):
         :returns: dict
         """
         return {
-            "connection": "ansible",
-            "ansible-inventory": self._config.provisioner.inventory_directory,
+            "testinfra-connection": "ansible",
+            "testinfra-ansible-inventory": self._config.provisioner.inventory_directory,
         }
 
     @property
